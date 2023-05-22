@@ -47,13 +47,14 @@
 
     </header>
     <main>
-        <div class="my_container d-flex justify-content-center align-items-center flex-wrap">
-            <span class="badge bg-dark p-4">
-                <h1> This exercise was carried out by : <span
-                        class="text-black">{{ $first_name . ' ' . $last_name }}</span> </h1>
-            </span>
-            <p>
-                <i>cit: {{ $description }} </i>
+        <div class="my_container d-flex justify-content-around align-items-center flex-column">
+            <div class="badge bg-dark p-4">
+                <h2 class="mb-4"> About me :</h2>
+                <p class="text-white">{{ $description }}</p>
+
+                <p>
+            </div>
+            <i>Written on the day: {{ $date }} </i>
             </p>
         </div>
     </main>

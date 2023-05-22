@@ -24,3 +24,15 @@ Route::get('/', function () {
 
     return view('home', $data);
 });
+
+Route::get('/about-me', function () {
+    $data = [
+
+        'description' => "I started studying programming languages ​​as self taught since September 2022, currently student of boolean academy since january 2023",
+        'date' => "22/05/2023",
+
+    ];
+
+
+    return view('about-me', $data);
+});
