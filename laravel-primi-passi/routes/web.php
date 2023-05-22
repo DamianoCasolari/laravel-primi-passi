@@ -20,10 +20,8 @@ Route::get('/', function () {
         'description' => "In a few years I will be a web developer "
 
     ];
-
-
     return view('home', $data);
-});
+})->name('home');
 
 Route::get('/about-me', function () {
     $data = [
@@ -35,4 +33,4 @@ Route::get('/about-me', function () {
 
 
     return view('about-me', $data);
-});
+})->name('about_me');

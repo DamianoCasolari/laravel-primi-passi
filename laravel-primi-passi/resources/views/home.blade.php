@@ -38,20 +38,20 @@
 <body class="bg-black">
 
     <header class="d-flex justify-content-center align-items-center flex-wrap">
-        <a href="/">
+        <a href="{{ route('home') }}">
             <i class="fa fa-home fa-xl" aria-hidden="true"></i>
         </a>
-        <a href="/about-me">
+        <a href="{{ route('about_me') }}">
             <i class="ms-5 fa fa-info fa-xl" aria-hidden="true"></i>
         </a>
 
     </header>
     <main>
-        <div class="my_container d-flex justify-content-center align-items-center flex-wrap">
-            <span class="badge bg-dark p-4">
+        <div class="my_container d-flex flex-column justify-content-around align-items-center flex-wrap">
+            <div class="badge bg-dark p-4">
                 <h1> This exercise was carried out by : <span
                         class="text-black">{{ $first_name . ' ' . $last_name }}</span> </h1>
-            </span>
+            </div>
             <p>
                 <i>cit: {{ $description }} </i>
             </p>

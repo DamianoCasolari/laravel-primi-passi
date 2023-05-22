@@ -37,11 +37,13 @@
 
 <body class="bg-black">
 
+
     <header class="d-flex justify-content-center align-items-center flex-wrap">
-        <a href="/">
+
+        <a href="{{ route('home') }}">
             <i class="fa fa-home fa-xl" aria-hidden="true"></i>
         </a>
-        <a href="/about-me">
+        <a href="{{ route('about_me') }}">
             <i class="ms-5 fa fa-info fa-xl" aria-hidden="true"></i>
         </a>
 
@@ -51,10 +53,9 @@
             <div class="badge bg-dark p-4">
                 <h2 class="mb-4"> About me :</h2>
                 <p class="text-white">{{ $description }}</p>
-
-                <p>
             </div>
-            <i>Written on the day: {{ $date }} </i>
+            <p>
+                <i>Written on the day: {{ $date }} </i>
             </p>
         </div>
     </main>
